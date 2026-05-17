@@ -1,4 +1,6 @@
-const API_BASE = '/api';
+const API_BASE = window.location.hostname.includes('vercel.app') 
+    ? 'https://carbon-footprint-management-system.onrender.com/api' 
+    : '/api';
 
 let currentUser = null;
 let currentRole = null;
